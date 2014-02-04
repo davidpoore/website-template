@@ -1,0 +1,40 @@
+html {
+  overflow-y: scroll;
+}
+
+/* offsite link styling */
+.offsite {
+  float: right;
+  width: 20%;
+}
+.offsite>a {
+  text-decoration: none !important;
+}
+.offsite>a>img {
+  width: 48px;
+  float: right;
+}
+
+/* nav pill styling */
+.nav-pills {
+  width: 80%;
+}
+.nav-pills>li {
+  width: 33%;
+  text-align: center;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.sidebar {
+  background-color: #ccc; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border-radius: 10px;
+}
+
+.tab-content {
+  margin-top: 10px;
+}

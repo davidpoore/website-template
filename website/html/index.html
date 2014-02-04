@@ -3,9 +3,12 @@
   <head>
     <title>David Poore: Design & Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Bootstrap -->
     <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    
+    <!-- custom CSS -->
+    <link href="../css/home.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -13,14 +16,15 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
+  
   <body>  
     
-    <div class="container" style="margin-top: 10px;">
+    <div class="container">
     
       <div class="row">
       
         <!-- name & image column -->
-        <div class="col-md-3" style="background-color: #ccc; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;">
+        <div class="col-md-3 sidebar">
           <h1><strong>David Poore</strong></h1>
           <p><em>Design & Development</em></p>
           <img src="../images/profile.png" alt="profile image" class="img-responsive img-rounded" />
@@ -30,67 +34,225 @@
         <!-- main page content -->
         <div class="col-md-9">
         
-          <!-- navigation and offsite links -->
-          <div class="row">
-            <!-- navigation -->
-            <div class="col-md-9">           
-              <div class="nav nav-pills nav-justified">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About</a></li>
-              </div>
-            </div>
+          <!-- offsite links -->
+          <div class="offsite">             
+            <a href="https://github.com/davidpoore" target="_blank">
+              <img src="../images/github.png" alt="github" />
+            </a>
+            <a href="http://www.linkedin.com/pub/david-poore/54/8a/690/" target="_blank">
+              <img src="../images/linkedin.jpg" alt="linkedin" />
+            </a>
+          </div>
+          
+          <!-- nav with no page reloads -->
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#home" data-toggle="pill">Home</a></li>
+            <li><a href="#resume" data-toggle="pill">Resume</a></li>
+            <li><a href="#about" data-toggle="pill">About</a></li>
+          </ul>
+          
+          <div class="tab-content">
+          
+            <!-- Home Page content -->
+            <div class="tab-pane active" id="home">
+              <!-- mission statement -->
+              <p class="lead">
+                I am a full-stack web developer with a passion for user experience design,
+                with years of experience developing enterprise-level software. I have a
+                passion for creating tools that empower individuals to
+                express themselves through technology.
+              </p>
+            
+              <br />
+            
+              <!-- past experience -->
+              <h2 class="text-center"><strong>Past Experience</strong></h2>
               
-            <!-- offsite link images -->
-            <div class="col-md-3">
+              <br />
+              
+              <!-- employer logos -->
               <div class="row">
-                <div class="col-md-4">
-                  <!-- spacer -->
+                <div class="col-md-6">
+                  <img src="../images/gtri.png" alt="gtri" class="img-responsive" />
                 </div>
-                <div class="col-md-4">
-                  <a href="https://github.com/davidpoore" target="_blank">
-                    <img src="../images/github.png" alt="github" class="img-responsive" />
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a href="http://www.linkedin.com/pub/david-poore/54/8a/690/" target="_blank">
-                    <img src="../images/linkedin.jpg" alt="linkedin" class="img-responsive" />
-                  </a>
+                <div class="col-md-6">
+                  <img src="../images/gt.png" alt="gt" class="img-responsive" />
                 </div>
               </div>
+              
+              <br />
+              
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <img src="../images/egg.png" alt="egg" class="img-responsive" />
+                </div>
+              </div>
+              
             </div>
-          </div>
+            
+            <!-- Resume -->
+            <div class="tab-pane" id="resume">
+              <!-- summary of qualifications -->
+              <h3 class="text-center">Summary of Qualifications</h3>
+              
+              <p>
+                Full-stack web developer with a passion for front-end development. 
+                Able to design, prototype, and evaluate web-based UI/UX quickly and 
+                cleanly, with an eye for pragmatic solutions and reusable code. 
+                Well-versed in client-server architectures. Strong understanding 
+                browser specifications and experienced in cross-browser problem 
+                solving using modern libraries and APIs.
+              </p>  
+              
+              <!-- core competencies -->
+              <h3 class="text-center">Core Competencies</h3>
+              
+              <table class="table text-center">
+                <tr>
+                  <td>Web Development</td>
+                  <td>Interface Design</td>
+                  <td>Rapid Prototyping</td>
+                </tr>
+                <tr>
+                  <td>Cross-Broswer Compatability</td>
+                  <td>Usability Testing</td>
+                  <td>Universal Design</td>
+                </tr>
+                <tr>
+                  <td>MV* Frameworks</td>
+                  <td>Human-Centered Computing</td>
+                  <td>Validation & Sanitization</td>
+                </tr>
+              </table>
+              
+              <!-- education -->
+              <h3 class="text-center">Education</h3>
+              
+              <p>
+                <b><i>Georgia Institute of Technology</i></b>
+                <br/>
+                Bachelor of Science, Computational Media
+                <br/>
+                Co-op Certification
+              </p>
+              
+              <!-- computer knowledge -->
+              <h3 class="text-center">Computer Knowledge</h3>
+              
+              <table class="table text-center">
+                <tr>
+                  <td>Java/J2EE</td>
+                  <td>JavaScript</td>
+                  <td>jQuery</td>
+                  <td>ExtJS</td>
+                  <td>HTML5</td>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>Oracle PL/SQL</td>
+                  <td>git</td>
+                  <td>PHP</td>
+                  <td>angularJS</td>
+                </tr>
+              </table>
+              
+              <!-- professional experience -->
+              <h3 class="text-center">Professional Experience</h3>
+              
+              <p>
+                <b><i>Georgia Tech Research Institute (GTRI)</i></b>
+                <br/>
+                Research Scientist I January 2012 - Present
+                <br/>
+                Student Co-op Spring 2008 - December 2011
+              </p>
+              <ul>
+                <li>principle front-end developer for modular document viewer 
+                allowing concurrent access to dynamic content with data restricted 
+                on a per-user basis; recently, implemented a version of the same 
+                software for a different customer applying a different view layer to 
+                the existing code, meeting customer demands without the need for 
+                massive rewrites on the backend</li>
+                <li>designed & implemented network status widget using jQuery that 
+                was able to be applied across all pages in a large-scale webapp by 
+                importing a single JavaScript file</li>
+                <li>implemented Lucene-backed advanced search functionality and UI to 
+                search across multiple contexts and document types</li>
+                <li>implemented two different visual designs for a single homepage used 
+                across multiple applications with only HTML & CSS, displaying properly 
+                across multiple browsers including Chrome, FireFox, and IE7+</li>
+                <li>maintained, updated, and refactored code at all application levels 
+                across multiple different web applications</li>
+                <li>facilitated communication between management, design team, and backend 
+                developers to ensure implementations of wireframes, mock-ups, and prototype 
+                design integrate quickly and easily with back-end design</li>
+              </ul>
+              
+              <p>
+                <b><i>EarSketch Project (Georgia Tech)</i></b>
+                <br/>
+                Social Media Team January 2013 – May 2013
+              </p>
+              <ul>
+                <li>modified existing CakePHP forums plugin to integrate with the 
+                existing web architecture of the EarSketch social media site, 
+                seemlessly integrating all user data to allow for instant access to 
+                the EarSketch forums using existing login credentials and profile 
+                information</li>
+                <li>integrated the forums permissions and security code with the 
+                existing administration interface for the EarSketch social media site 
+                for immediate use by EarSketch admins and moderators</li>
+                <li>wrote documentation detailing plugin modifications and outlining 
+                procedures for updating the forums software in the future</li>
+              </ul>
+              
+              <p>
+                <b><i>Emergent Games Group (Georgia Tech)</i></b>
+                <br/>
+                Lead Developer, FriendFinder project August 2011 - December 2011
+              </p>
+              <ul>
+                <li>lead developer for prototype application using the Facebook Graph 
+                API to allow users to find and connect with members of their friend list 
+                at large events such as football games</li>
+                <li>gave presentation and demonstration of prototype application to 
+                members of the Georgia Tech VIP team and visiting representatives 
+                from the University of Strathclyde</li>
+              </ul>
+            </div>
+            
+            <!-- About -->
+            <div class="tab-pane" id="about">
+              <h3 class="text-center">About Me</h3>
           
-          <hr />
-          
-          <!-- mission statement -->
-          <p class="lead">
-            I am a full-stack web developer with a passion for user experience design,
-            with years of experience developing enterprise-level software. However, my
-            real passion is designing and creating tools to allow creative individuals to
-            express themselves through technology.
-          </p>
-        
-          <br />
-        
-          <!-- past experience -->
-          <h2 class="text-center"><strong>Past Experience<strong></h2>
-          
-          <br />
-          
-          <!-- employer logos -->
-          <div class="row">
-            <div class="col-md-6">
-                <img src="../images/gtri.png" alt="gtri" class="img-responsive" />
+              <div class="row">
+                <div class="col-md-9">
+                  <p>
+                    Outside of software development, most of my hobbies are related to either
+                    music or gaming. I have been a bassist, vocalist, and guitarist for several
+                    small projects, and have contributed to multiple music technology projects
+                    at Georgia Tech. I also enjoy going to shows, especially at smaller venues,
+                    and I love discovering new music and artists.
+                  </p>
+                  <p>
+                    In the gaming world, I am primarily interested in turned-based strategy
+                    games, such as the Civilization series, and I am also an avid Magic: the
+                    Gathering player. I occasionally play tabletop strategy games such as
+                    Warmachine and Warhammer 40k.
+                  </p>
+                  <p>
+                    Other hobbies I've dabbled in (and continue to dabble in over the years) include
+                    homebrewing, game design, poetry & creative writing, and stand-up comedy.
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <img class="img-rounded img-responsive" src="../images/about1.jpg" alt="performing at a fraternity event"/>
+                  <br/>
+                  <p class="text-center text-muted">
+                    <small>Performing at a fraternity event</small>
+                  </p>
+                </div>
               </div>
-              <div class="col-md-6">
-                <img src="../images/gt.png" alt="gt" class="img-responsive" />
-              </div>
-          </div>
-          <br />
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <img src="../images/egg.png" alt="egg" class="img-responsive" />
             </div>
           </div>
         
