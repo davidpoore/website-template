@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   
-  <body>  
+  <body>
     
     <div class="container">
     
@@ -25,24 +25,32 @@
       
         <!-- name & image column -->
         <div class="col-md-3 sidebar">
-          <h1><strong>David Poore</strong></h1>
-          <p><em>Design & Development</em></p>
-          <img src="../images/profile.png" alt="profile image" class="img-responsive img-rounded" />
+          <div class="text-center">
+            <h1><strong>David Poore</strong></h1>
+            <p><em>Design & Development</em></p>
+            <img src="../images/profile.png" alt="profile image" class="img-rounded" />
+          </div>
           <br />
-        </div>
-        
-        <!-- main page content -->
-        <div class="col-md-9">
-        
+          <!-- mission statement -->
+          <p>
+            I am a full-stack web developer with a passion for user experience design,
+            with years of experience developing enterprise software. I want to
+            create tools that empower individuals to
+            express themselves through technology.
+          </p>
           <!-- offsite links -->
           <div class="offsite">             
             <a href="https://github.com/davidpoore" target="_blank">
               <img src="../images/github.png" alt="github" />
             </a>
             <a href="http://www.linkedin.com/pub/david-poore/54/8a/690/" target="_blank">
-              <img src="../images/linkedin.jpg" alt="linkedin" />
+              <img src="../images/linkedin.png" alt="linkedin" />
             </a>
           </div>
+        </div>
+
+        <!-- main page content -->
+        <div class="col-md-9">
           
           <!-- nav with no page reloads -->
           <ul class="nav nav-pills">
@@ -55,78 +63,85 @@
           
             <!-- Home Page content -->
             <div class="tab-pane active" id="home">
-              <!-- mission statement -->
-              <p class="lead">
-                I am a full-stack web developer with a passion for user experience design,
-                with years of experience developing enterprise-level software. I want to
-                create tools that empower individuals to
-                express themselves through technology.
-              </p>
-            
-              <br />
-            
-              <!-- past experience -->
-              <h2 class="text-center"><strong>Past Experience</strong></h2>
+
               
-              <br />
+              <!-- experience entries -->
+              <h2 class="text-center"><strong>Work Experience</strong></h2>
               
-              <table class="table">
-                <tr>
-                  <th>
-                    <img src="../images/gtri.png" alt="gtri" class="img-responsive" />
-                  </th>
-                  <th>
-                    <img src="../images/earsketch_logo.png" alt="earsketch" class="img-responsive" />
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>
-                      At GTRI, my current project is primarily front-end development in AngularJS. Working with the design team, I have taken
-                      the mockups and wireframes for the application and translated them into interactive web pages using HTML5, CSS3, and AngularJS.
-                      Previous projects I have worked on include adding advanced search functionality to our applications and acting as the lead developer
-                      for a document management system.
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      Currently, I am working with Georgia Tech's EarSketch team to help create a music-based computer science curriculum. My principal involvement with this
-                      project has been as a member of the social media team, designing and implementing a website that allows students to publish their work and share it with
-                      others. Right now, we are working to implement an online IDE and DAW and I am doing the initial design work for the site layout.
-                    </p>
-                    <div class="link">
-                      <a href="http://earsketch.gatech.edu/media/" target="_blank">View Site</a>
+              <div class="experiences">
+              
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="header">
+                      <img src="../images/gtri.png" alt="gtri" />
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    <img src="../images/egg.png" alt="egg" class="img-responsive" />
-                  </th>
-                  <th>
-                    <img src="../images/gt.png" alt="gt" class="img-responsive" />
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>
-                      I worked on implementing the initial prototype for this project during my senior year of my undergraduate studies at Georgia Tech. The system allows users
-                      to log in using their Facebook profile at large events - in particular, Georgia Tech football games - and find out which of their Facebook friends were also at
-                      the event. The project is currently in it's third iteration, but the underlying code is still based on my initial prototype.
-                    </p>
-                    <div class="link">
+                    <div class="description">
+                      <p>
+                        Working for the Cyber Technology lab at GTRI, my current project is primarily front-end development in AngularJS. Working with the design team, I have taken
+                        the mockups and wireframes for our application and translated them into interactive web pages using HTML5, CSS3, and AngularJS.
+                        Previous projects I have worked on include adding advanced search functionality to our applications and acting as the lead developer
+                        for a document management system.
+                      </p>
+                    </div>
+                    <div class="links">
+                      <a href="http://www.gtri.gatech.edu/ctisl" target="_blank">Learn More</a>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="header">
+                      <img src="../images/earsketch_logo.png" alt="earsketch" />
+                    </div>
+                    <div class="description">
+                      <p>
+                        Currently, I am working with Georgia Tech's EarSketch team to help create a music-based computer science curriculum for high school students. My principal 
+                        involvement with this project has been as a member of the social media team, designing and implementing a website that allows students to publish their work 
+                        and share it with others. Right now, we are working to implement an online IDE and DAW and I am doing the initial design work for the site layout, and then
+                        implementing the design using Twitter Bootstrap and AngularJS.
+                      </p>
+                    </div>
+                    <div class="links">
+                      <a href="http://earsketch.gatech.edu/media/" target="_blank">View Social Media Site</a> |
+                      <a href="http://earsketch.gatech.edu/earsketch2/welcome.html#/development" target="_blank">View Earsketch Online</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="header">
+                      <img src="../images/egg.png" alt="egg" />
+                    </div>
+                    <div class="description">
+                      <p>
+                        For EGG, I worked on implementing the initial prototype for the FriendFinder project. The system allows users to log in using their Facebook profile and 
+                        discover which of their Facebook friends were at the same location as them - in this case, Georgia Tech football games. The project is currently in it's third 
+                        iteration, but the underlying code is still based on my initial prototype.
+                      </p>
+                    </div>
+                    <div class="links">
                       <a href="http://egg.lmc.gatech.edu/friendfinder/" target="_blank">View Mobile Site</a>
                     </div>
-                  </td>
-                  <td>
-                    <p>
-                      My first job in college was working as a Teaching Assistant for the Computer Science department. I was in charge of teaching Georgia Tech's non-STEM students
-                      the basics of coding in Jython, a proprietary Python implementation backed by Java to allow for more advanced Object-Oriented coding.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="header">
+                      <img src="../images/gt.png" alt="gt" />
+                    </div>
+                    <div class="description">
+                      <p>
+                        My first job in college was working as a Teaching Assistant for the Computer Science department. I was in charge of teaching Georgia Tech's non-STEM students
+                        the basics of coding in Jython, a proprietary Python implementation backed by Java to allow for more advanced Object-Oriented coding.
+                      </p>
+                    </div>
+                    <div class="links">
+                      <a href="http://egg.lmc.gatech.edu/friendfinder/" target="_blank">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
             </div>
             
             <!-- Resume -->
@@ -265,32 +280,30 @@
               <h3 class="text-center">About Me</h3>
           
               <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
+                  <div class="img-right">
+                    <img class="img-rounded img-responsive" src="../images/about1.jpg" alt="performing at a fraternity event"/>
+                  </div>
                   <p>
                     Outside of software development, most of my hobbies are related to either
                     music or gaming. I have been a bassist, vocalist, and guitarist for several
                     small projects, and have contributed to multiple music technology projects
-                    at Georgia Tech. I also enjoy going to shows, especially at smaller venues,
-                    and I love discovering new music and artists.
+                    at Georgia Tech. One of my favorite things is going to shows and discovering
+                    new artists.
                   </p>
                   <p>
-                    In the gaming world, I am primarily interested in turned-based strategy
-                    games, such as the Civilization series, and I am also an avid Magic: the
-                    Gathering player. I occasionally play tabletop strategy games such as
-                    Warmachine and Warhammer 40k.
+                    I play a variety of games, both video and analog, but turned-based strategy
+                    games, such as the Civilization series. I am also an avid Magic: the
+                    Gathering player, and I love board games of all types. I occasionally play 
+                    tabletop strategy games such as Warmachine and Warhammer 40k.
                   </p>
                   <p>
                     Other hobbies I've dabbled in (and continue to dabble in over the years) include
-                    homebrewing, game design, poetry & creative writing, and stand-up comedy.
+                    homebrewing, game design, poetry & creative writing, and stand-up comedy. I enjoy
+                    many outdoor activities, too, especially hiking and whitewater rafting.
                   </p>
-                </div>
-                <div class="col-md-3">
-                  <img class="img-rounded img-responsive" src="../images/about1.jpg" alt="performing at a fraternity event"/>
-                  <br/>
-                  <p class="text-center text-muted">
-                    <small>Performing at a fraternity event</small>
-                  </p>
-                </div>
+                  
+                </div> 
               </div>
             </div>
           </div>
