@@ -1,7 +1,3 @@
-Use panels and wells for better styling
-
-Button styling on offsite links
-
 Customize Bootstrap theme
 
 LESS-ify the CSS
