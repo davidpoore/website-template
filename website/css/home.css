@@ -65,18 +65,3 @@ html {
   margin-top: 10px;
   padding: 0 5px;
 }
-.experiences .links {
-  text-align: center;
-}
-
-/* nav pill styling */
-.nav-pills {
-  width: 100%;
-}
-.nav-pills>li {
-  width: 33%;
-  text-align: center;
-}
-.nav-pills>li>a {
-  margin: 0 10px;
-}

@@ -24,7 +24,7 @@
       <div class="row">
       
         <!-- name & image column -->
-        <div class="col-md-3 sidebar">
+        <div class="col-md-2 sidebar">
           <div class="text-center">
             <h1><strong>David Poore</strong></h1>
             <p><em>Design & Development</em></p>
@@ -32,12 +32,11 @@
           </div>
           <br />
           <!-- mission statement -->
-          <p>
-            I am a full-stack web developer with a passion for user experience design,
-            with years of experience developing enterprise software. I want to
-            create tools that empower individuals to
-            express themselves through technology.
-          </p>
+          <div class="well">
+            <p>
+              I am a full-stack web developer with a passion for user experience design.
+            </p>
+          </div>
           <!-- offsite links -->
           <div class="offsite">             
             <a href="https://github.com/davidpoore" target="_blank">
@@ -48,19 +47,10 @@
             </a>
           </div>
         </div>
-
+          
         <!-- main page content -->
-        <div class="col-md-9">
-          
-          <!-- nav with no page reloads -->
-          <ul class="nav nav-pills">
-            <li class="active"><a href="#home" data-toggle="pill">Home</a></li>
-            <li><a href="#resume" data-toggle="pill">Resume</a></li>
-            <li><a href="#about" data-toggle="pill">About</a></li>
-          </ul>
-          
-          <div class="tab-content">
-          
+        <div class="col-md-8">        
+          <div class="tab-content">         
             <!-- Home Page content -->
             <div class="tab-pane active" id="home">
 
@@ -83,7 +73,7 @@
                         for a document management system.
                       </p>
                     </div>
-                    <div class="links">
+                    <div class="text-center">
                       <a href="http://www.gtri.gatech.edu/ctisl" target="_blank">Learn More</a>
                     </div>
                   </div>
@@ -100,7 +90,7 @@
                         implementing the design using Twitter Bootstrap and AngularJS.
                       </p>
                     </div>
-                    <div class="links">
+                    <div class="text-center">
                       <a href="http://earsketch.gatech.edu/media/" target="_blank">View Social Media Site</a> |
                       <a href="http://earsketch.gatech.edu/earsketch2/welcome.html#/development" target="_blank">View Earsketch Online</a>
                     </div>
@@ -119,7 +109,7 @@
                         iteration, but the underlying code is still based on my initial prototype.
                       </p>
                     </div>
-                    <div class="links">
+                    <div class="text-center">
                       <a href="http://egg.lmc.gatech.edu/friendfinder/" target="_blank">View Mobile Site</a>
                     </div>
                   </div>
@@ -134,7 +124,7 @@
                         the basics of coding in Jython, a proprietary Python implementation backed by Java to allow for more advanced Object-Oriented coding.
                       </p>
                     </div>
-                    <div class="links">
+                    <div class="text-center">
                       <a href="http://egg.lmc.gatech.edu/friendfinder/" target="_blank">Learn More</a>
                     </div>
                   </div>
@@ -146,6 +136,12 @@
             
             <!-- Resume -->
             <div class="tab-pane" id="resume">
+            
+              <h2 class="text-center"><strong>Resume</strong></h2>
+              <div class="text-center">
+                <span class="glyphicon glyphicon-file"></span><a href="../files/DavidPoore_resume.pdf" download="DavidPoore_resume">Download PDF</a>
+              </div>
+                
               <!-- summary of qualifications -->
               <h3 class="text-center">Summary of Qualifications</h3>
               
@@ -245,7 +241,7 @@
               <p>
                 <b><i>EarSketch Project (Georgia Tech)</i></b>
                 <br/>
-                Social Media Team January 2013 – May 2013
+                Social Media Team January 2013 - May 2013
               </p>
               <ul>
                 <li>modified existing CakePHP forums plugin to integrate with the 
@@ -274,40 +270,17 @@
                 from the University of Strathclyde</li>
               </ul>
             </div>
-            
-            <!-- About -->
-            <div class="tab-pane" id="about">
-              <h3 class="text-center">About Me</h3>
-          
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="img-right">
-                    <img class="img-rounded img-responsive" src="../images/about1.jpg" alt="performing at a fraternity event"/>
-                  </div>
-                  <p>
-                    Outside of software development, most of my hobbies are related to either
-                    music or gaming. I have been a bassist, vocalist, and guitarist for several
-                    small projects, and have contributed to multiple music technology projects
-                    at Georgia Tech. One of my favorite things is going to shows and discovering
-                    new artists.
-                  </p>
-                  <p>
-                    I play a variety of games, both video and analog, but turned-based strategy
-                    games, such as the Civilization series. I am also an avid Magic: the
-                    Gathering player, and I love board games of all types. I occasionally play 
-                    tabletop strategy games such as Warmachine and Warhammer 40k.
-                  </p>
-                  <p>
-                    Other hobbies I've dabbled in (and continue to dabble in over the years) include
-                    homebrewing, game design, poetry & creative writing, and stand-up comedy. I enjoy
-                    many outdoor activities, too, especially hiking and whitewater rafting.
-                  </p>
-                  
-                </div> 
-              </div>
-            </div>
           </div>
         
+        </div>
+        
+        <!-- side tab navigation -->
+        <div class="col-md-2">
+          <!-- nav with no page reloads -->
+          <ul class="nav nav-pills nav-stacked text-center">
+            <li class="active"><a href="#home" data-toggle="pill">About</a></li>
+            <li><a href="#resume" data-toggle="pill">Resume</a></li>
+          </ul>
         </div>
       
       </div>
