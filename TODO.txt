@@ -1,4 +1,6 @@
-Finalize the experience table - possibly replace with grid system
+Use panels and wells for better styling
+
+Button styling on offsite links
 
 Customize Bootstrap theme
 
