@@ -10,22 +10,16 @@ html {
   margin-top: 10px;
 }
 
-/* about images */
-.img-right {
-  width: 100px;
-  margin-left: 5px;
-  float: right;
-}
-
 /* sidebar */
 .sidebar {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
   margin-top: -30px;
 }
 .sidebar img {
   max-width: 100%;
+  padding: 5px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
 }
 
 /* offsite link styling */
